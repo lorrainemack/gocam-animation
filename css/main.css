@@ -1,0 +1,142 @@
+body {
+    height: 100vh;
+    background: url(../img/bg.jpeg) center / cover no-repeat;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1024px;
+    height: 768px;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    top: 0;
+}
+
+/* ---------------------------------------------------------- */
+
+/* ------------- ADVENTURE Word Animation ------------------- */
+h2 {
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    z-index: 9;
+}
+
+.grow {
+    text-transform: uppercase;
+    display: inline-block;
+	transition-duration: .3s;
+	transition-property: transform;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+/* ---------------------------------------------------------- */
+
+/* ------------- GOCAM Recording LED Animation -------------- */
+#camera {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    width: 300px;
+    top: 10%;
+}
+			
+.led {
+  position: absolute;
+  left: 120px; 
+  top: 165px;  
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ff1919;
+  box-shadow: inset 0px 1px 0px rgba(0,0,0,.1);
+  -webkit-animation: led 1.5s infinite;
+  -moz-animation: led 1.5s infinite;
+  -ms-animation: led 1.5s infinite;
+  -o-animation: led 1.5s infinite;
+  animation: led 1.5s infinite;
+}
+
+.shadow {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 240px;
+  height: 20px;
+  margin: 170px -120px 0px;				
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.3);
+}
+
+/* LED keyframes */
+@-webkit-keyframes led {
+  from {
+    opacity:.1;
+  }
+  
+  to {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes led {
+  from {
+    opacity:.1;
+  }
+  
+  to {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes led {
+  from {
+    opacity:.1;
+  }
+  
+  to {
+    opacity:1;
+  }
+}
+
+@-o-keyframes led {
+  from {
+    opacity:.1;
+  }
+  
+  to {
+    opacity:1;
+  }
+}
+
+@keyframes led {
+  from {
+    opacity:.1;
+  }
+  
+  to {
+    opacity:1;
+  }
+}
+/* ---------------------------------------------------------- */
+
+/* ----------------- Lens Canvas Animation ------------------ */
+
+#lens {
+    position: absolute;
+    z-index: 9;
+    top: -127px;
+    left: -10px;
+}
